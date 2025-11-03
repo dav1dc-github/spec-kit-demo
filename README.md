@@ -126,11 +126,13 @@ Specifications in Spec Kit are living documents. Update them as new insights or 
 
 ## Resources
 
+- [Official Spec Kit Documentation](https://github.github.com/spec-kit/)
 - [Spec Kit Quick Start Guide](https://github.github.com/spec-kit/quickstart.html)
-- [Official Spec Kit Documentation](https://speckit.org/)
+- [Spec Kit Installation Guide](https://github.github.com/spec-kit/installation.html)
+- [GitHub Spec Kit Repository](https://github.com/github/spec-kit)
+- [Spec Kit Community Site](https://speckit.org/)
 - [GitHub Blog: Spec-driven development with AI](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/)
 - [LogRocket: Exploring spec-driven development](https://blog.logrocket.com/github-spec-kit/)
-- [GitHub Spec Kit Repository](https://github.com/github/spec-kit)
 
 ## Example Workflow
 
