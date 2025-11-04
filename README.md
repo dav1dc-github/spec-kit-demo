@@ -44,7 +44,9 @@ Or initialize with a specific AI agent:
 
 ```sh
 specify init <PROJECT_NAME> --ai copilot
+```
 OR
+```sh
 cd <PROJECT_NAME> && specify init --ai copilot --here
 ```
 
