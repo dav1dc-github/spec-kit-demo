@@ -44,18 +44,30 @@ Or initialize with a specific AI agent:
 
 ```sh
 specify init <PROJECT_NAME> --ai copilot
+OR
+cd <PROJECT_NAME> && specify init --ai copilot --here
 ```
 
 This sets up `.github` and `.specify` directories for your specification files and plans.
 
 ## The Spec-Driven Development Workflow
 
-### 1. **Create Your Specification**
+### 1. **Define Your Constitution**
+
+Define what our over archaring project principles that the AI should adhere to when making decisions about the spec, plan and tasks for your development project
+
+```
+/speckit.constitution
+Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
+Most important are concepts of secure coding and utilising test driven development (TDD)
+```
+
+### 2. **Create Your Specification**
 
 Define what you want to build and why, focusing on goals, user scenarios, and desired outcomes. Use the `/specify` slash command:
 
 ```
-/specify
+/speckit.specify
 Build an app to manage tasks with Kanban boards, multiple users, and real-time commenting.
 ```
 
@@ -64,12 +76,12 @@ Build an app to manage tasks with Kanban boards, multiple users, and real-time c
 - Describe functional requirements and user scenarios
 - Avoid technical implementation details at this stage
 
-### 2. **Plan the Implementation**
+### 3. **Plan the Implementation**
 
 Once the specification is ready, generate the technical plan using the `/plan` command:
 
 ```
-/plan
+/speckit.plan
 Use React with TypeScript; backend with Node.js & PostgreSQL.
 ```
 
@@ -79,22 +91,37 @@ This step details:
 - Technical approach
 - Integration points
 
-### 3. **Break Down Into Tasks**
+### 4. **Optional Commands**
+
+Consider using the following optional commands to further refine your spoecification:
+
+```
+│  Optional commands that you can use for your specs (improve quality & confidence)                                 │
+│                                                                                                                   │
+│  ○ /speckit.clarify (optional) - Ask structured questions to de-risk ambiguous areas before planning (run before  │
+│  /speckit.plan if used)                                                                                           │
+│  ○ /speckit.analyze (optional) - Cross-artifact consistency & alignment report (after /speckit.tasks, before      │
+│  /speckit.implement)                                                                                              │
+│  ○ /speckit.checklist (optional) - Generate quality checklists to validate requirements completeness, clarity,    │
+│  and consistency (after /speckit.plan)    
+```
+
+### 5. **Break Down Into Tasks**
 
 Divide the spec and technical plan into concrete, actionable tasks using the `/tasks` command:
 
 ```
-/tasks
+/speckit.tasks
 # Outputs a list of development tasks, requirements, and milestones.
 ```
 
 Each task aligns with the guiding specification and can be assigned to developers or AI agents.
 
-### 4. **Iterative Implementation**
+### 6. **Iterative Implementation**
 
 Use AI coding agents (like GitHub Copilot, Claude, Cursor, or Gemini) to implement each task. The living specification and technical plan guide the implementation process.
 
-### 5. **Review and Refactor**
+### 7. **Review and Refactor**
 
 Specifications in Spec Kit are living documents. Update them as new insights or requirements arise to ensure specifications and actual code remain aligned.
 
@@ -146,7 +173,7 @@ specify init my-task-manager --ai copilot
 cd my-task-manager
 
 # 3. Create specification
-/specify
+/speckit.specify
 Build a task management system with:
 - User authentication
 - Project workspaces
@@ -155,7 +182,7 @@ Build a task management system with:
 - Task comments and attachments
 
 # 4. Create technical plan
-/plan
+/speckit.plan
 Frontend: React + TypeScript + Tailwind CSS
 Backend: Node.js + Express + PostgreSQL
 Authentication: JWT tokens
@@ -163,12 +190,13 @@ Real-time: Socket.io
 Deployment: Docker containers on AWS
 
 # 5. Generate tasks
-/tasks
+/speckit.tasks
 # This will create a breakdown of implementation tasks
 
 # 6. Implement tasks iteratively
 # Work through each task with your AI coding agent
 # Update specs and plans as you learn and requirements evolve
+/speckit.implement
 ```
 
 ## Contributing
