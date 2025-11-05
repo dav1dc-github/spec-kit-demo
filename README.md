@@ -110,7 +110,7 @@ Consider using the following optional commands to further refine your spoecifica
 
 ### 5. **Break Down Into Tasks**
 
-Divide the spec and technical plan into concrete, actionable tasks using the `/tasks` command:
+Divide the spec and technical plan into concrete, actionable tasks using the `/speckit.tasks` command:
 
 ```
 /speckit.tasks
