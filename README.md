@@ -66,7 +66,7 @@ Most important are concepts of secure coding and utilising test driven developme
 
 ### 2. **Create Your Specification**
 
-Define what you want to build and why, focusing on goals, user scenarios, and desired outcomes. Use the `/specify` slash command:
+Define what you want to build and why, focusing on goals, user scenarios, and desired outcomes. Use the `/speckit.specify` slash command:
 
 ```
 /speckit.specify
@@ -80,7 +80,7 @@ Build an app to manage tasks with Kanban boards, multiple users, and real-time c
 
 ### 3. **Plan the Implementation**
 
-Once the specification is ready, generate the technical plan using the `/plan` command:
+Once the specification is ready, generate the technical plan using the `/speckit.plan` command:
 
 ```
 /speckit.plan
